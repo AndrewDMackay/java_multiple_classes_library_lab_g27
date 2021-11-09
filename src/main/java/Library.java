@@ -13,15 +13,15 @@ public class Library {
     }
 
     public int getCapacity() {
-        return capacity;
+        return this.capacity;
     }
 
     public int countNumberOfBooks() {
-        return stock.size();
+        return this.stock.size();
     }
 
     public void addBookToLibrary(Book book) {
-        if (this.getCapacity() <= 2) {
+        if (this.stock.size() < this.capacity) {
             this.stock.add(book);
         } else {
             System.out.println("Sorry library at capacity..");
