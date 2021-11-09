@@ -12,7 +12,7 @@ public class LibraryTest {
 
     @Before
         public void before() {
-            library = new Library();
+            library = new Library(2);
             book1 = new Book("Lord Of The Rings", "J.R.R.Tolkien", "fiction");
             book2 = new Book("learning React, Modern Patterns For Developing React Apps", "Eve Porcello", "non-fiction");
         }
