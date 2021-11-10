@@ -27,4 +27,8 @@ public class Library {
             System.out.println("Sorry library at capacity..");
         }
     }
+
+    public Book removeBookFromLibrary(){
+        return this.stock.remove(0);
+    }
 }

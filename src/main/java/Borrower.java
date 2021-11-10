@@ -12,16 +12,25 @@ public class Borrower {
         this.checkOutLimit = checkOutLimit;
     }
 
-    public int getcheckOutLimit() {
+    public int getCheckOutLimit() {
         return this.checkOutLimit;
     }
 
-    public int countNumberOfBooks() {
+    public int countNumberOfBooksInCollection() {
         return this.collection.size();
     }
 
     public void addBookToBorrower(Book book) {
         if (this.collection.size() < this.checkOutLimit) {
+            this.collection.add(book);
+        } else {
+            System.out.println("Sorry Borrower at book check out limit..");
+        }
+    }
+
+    public void addBookToBorrowerAndRemoveFromLibrary(Library library) {
+        if (this.collection.size() < this.checkOutLimit) {
+            Book book = library.removeBookFromLibrary();
             this.collection.add(book);
         } else {
             System.out.println("Sorry Borrower at book check out limit..");

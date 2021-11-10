@@ -15,7 +15,7 @@ public class LibraryTest {
         public void before() {
             library = new Library(2);
             book1 = new Book("Lord Of The Rings", "J.R.R.Tolkien", "fiction");
-            book2 = new Book("learning React, Modern Patterns For Developing React Apps", "Eve Porcello", "non-fiction");
+            book2 = new Book("Learning React, Modern Patterns For Developing React Apps", "Eve Porcello", "non-fiction");
             book3 = new Book("The Silmarillion", "J.R.R.Tolkien", "fiction");
         }
 
